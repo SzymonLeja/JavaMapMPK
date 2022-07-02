@@ -39,6 +39,7 @@ public class ApiConnection {
                     content.append(System.lineSeparator());
                 }
             }
+            //JSON Parsing by string replace - why? coz I couldn't download json parser lib for some weird reason, so I was like "Fine. I'll do it myself"
             String contentString = content.toString();
             contentString = contentString.replace("[","");
             contentString = contentString.replace("]","");
